@@ -1,0 +1,30 @@
+<div class="row w-100">
+    <div class="col-md-12 ml-1 d-flex justify-content-center">
+        <mat-card class="example-card">
+            <mat-card-content>
+              <p class="text-center f-color-t s-image">
+                <b>INGRESA A TU CUENTA</b>
+              </p>
+              <form class="text-center container" [formGroup]="loginForm" (ngSubmit)="save()">
+                <mat-form-field class="example-full-width">
+                    <input type="text" matInput formControlName="username" placeholder="Usuario">
+                    <mat-error *ngIf="loginForm.hasError('required')">
+                      El usuario es <strong>requerido</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <input type="password" matInput formControlName="password" placeholder="Contraseña">
+                    <mat-error *ngIf="loginForm.hasError('required')">
+                      La contraseña es <strong>requerida</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <button class="position-btn mt-1" mat-raised-button type="submit"><b>INGRESAR</b></button>
+              </form>
+              <div class="example-full-width container d-flex flex-column mt-4 mb-3">
+                <u>Olvidé mi pin</u>
+                <u class="mt-2">Olvide mi número de celular empresarial</u>
+              </div>
+            </mat-card-content>
+          </mat-card>
+    </div>
+</div>

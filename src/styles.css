@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'PT Sans Narrow', sans-serif; }
+
+:root {
+    --p-color: #004B40;
+    --s-color: #1EEB00;
+    --w-color: #fff;
+    --r-color: #FF3434;
+}
+
+.mat-card {
+    border: 3px solid var( --s-color );
+}
+
+.mat-raised-button {
+    border-radius: 20px !important;
+    background-color: var( --s-color );
+}
+
+.btn-limpiar {
+    border-radius: 5px !important;
+    background-color: var( --p-color );
+    color: var( --w-color );
+}
+
+.btn-buscar {
+    border-radius: 5px !important;
+    background-color: var( --s-color );
+}
+
+.text-align-center {
+    text-align: center !important;
+}
+
+.mat-toolbar {
+    background-color: var( --p-color );
+}
+
+.s-image {
+    font-size: 1.5em;
+}
+
+.w-62 {
+    width: 62%;
+}
+
+.mt-6 {
+    margin-top: 10.5em;
+}
+
+.mt-8 {
+    margin-top: 7.5em !important;
+}
+
+.mt-5em {
+    margin-top: 5em;
+}
+
+.mt-4em {
+    margin-top: 4em !important;
+}
+
+.mat-paginator-range-actions {
+    display: none !important;
+}
+
+.table-responsive {
+  overflow: auto;
+  padding: .5em 0;
+}
+
+.mat-paginator {
+    background: #fff0 !important;
+}

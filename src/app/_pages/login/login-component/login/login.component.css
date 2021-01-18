@@ -1,0 +1,46 @@
+.b-color {
+    background-color: var( --p-color );
+    height: 96%;
+}
+
+.h-4 {
+    height: 4%;
+    background-color: var( --s-color );
+}
+
+.s-image {
+    font-size: 1.5em;
+}
+
+.f-color-p {
+    color: var( --w-color );
+}
+
+.f-color-s {
+    color: var( --s-color );
+}
+
+.f-color-t {
+    color: var( --p-color );
+}
+
+.example-card {
+  width: 30%;
+}
+
+.example-full-width {
+    width: 80%;
+}
+
+.position-btn {
+    display: block;
+    margin-left: 3em;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-2 {
+    height: 2em;
+}

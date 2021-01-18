@@ -1,0 +1,26 @@
+<div class="row w-100 text-center">
+    <div class="col-md-12 ml-1 d-flex justify-content-center align-items-center">
+        <mat-card class="example-card container p-5">
+            <mat-card-content>
+              <div class="d-flex justify-content-center">
+                <img src="/assets/icon/Escudo.svg">
+              </div>
+              <p class="text-center f-color-t s-image mt-2">
+                <b>INGRESO SEGURO</b>
+              </p>
+              <p class="text-center f-color-t s-image mt-2">
+                <small>Un código de verificación fue enviado a tu correo, por favor introdúcelo.</small>
+              </p>
+              <form class="text-center container" [formGroup]="verifyForm" (ngSubmit)="save()">
+                <mat-form-field class="example-full-width text-align-center">
+                    <input type="text" matInput formControlName="code" placeholder="Ingresa tu código de verificación">
+                    <mat-error *ngIf="verifyForm.hasError('required')">
+                      El usuario es <strong>requerido</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <button class="mt-1" mat-raised-button type="submit"><b>ENTRAR</b></button>
+              </form>
+            </mat-card-content>
+          </mat-card>
+    </div>
+</div>

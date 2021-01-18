@@ -1,0 +1,44 @@
+.example-container {
+  width: 100%;
+  height: 93%;
+}
+
+.red-color {
+  color: var( --r-color );
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-68 {
+  width: 68%;
+}
+
+.f-color-s {
+  color: var( --s-color );
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+  text-align: center !important;
+}
