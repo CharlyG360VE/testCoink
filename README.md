@@ -6,22 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Estructura del proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  Proyecto cargado con Lazy Load, despues de compilar redirige directamente a la ruta principal `http://localhost:4200/iniciarSesion`
+   # src/app/_interceptor: Contiene un interceptor el cual mantengo un filtro de todas las peticiones http y me permite injectar de manera global el token en todas las peticiones en el caso de que exista.
+   # src/app/_pages: Contiene los componentes del proyecto cargados mediante lazy load desde el routing papa o principal.
+   # src/app/services: Contiene los servicios utilizados para las peticiones http, ordenados por carpeta de cada componente utilizado en el proyecto.
 
-## Build
+## Importante
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  # Al momento los servicios estan funcionando, el servidor me responde un objeto sin items "null" y la propiedad count: 1, el unico servicio funcionando a un 100% seria el de inicio de sesion.
